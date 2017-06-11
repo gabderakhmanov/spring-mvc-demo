@@ -6,7 +6,9 @@
 <br>
 <br>
 
-The name is: ${student.firstName} ${student.lastName}
+Name: ${student.firstName} ${student.lastName}
+<br><br>
+Country: ${student.country}
 
 </body>
 
