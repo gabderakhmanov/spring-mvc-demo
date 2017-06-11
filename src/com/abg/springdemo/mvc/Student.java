@@ -1,7 +1,5 @@
 package com.abg.springdemo.mvc;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
 
 /**
  * Created by maxim on 6/11/17.
@@ -12,15 +10,6 @@ public class Student {
     private String lastName;
     private String country;
 
-    private LinkedHashMap<String,String> countryOptions;
-
-    public Student(){
-        countryOptions = new LinkedHashMap<>();
-        countryOptions.put("DK", "Denmark");
-        countryOptions.put("RU", "Russia");
-        countryOptions.put("SW", "Sweden");
-        countryOptions.put("BR", "Brazil");
-    }
 
     public String getFirstName() {
         return firstName;
@@ -46,7 +35,4 @@ public class Student {
         this.country = country;
     }
 
-    public HashMap<String, String> getCountryOptions() {
-        return countryOptions;
-    }
 }
