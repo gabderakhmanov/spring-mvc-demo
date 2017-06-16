@@ -4,3 +4,4 @@ spring-mvc-demo.iml
 /classes
 /out
 /lib
+web/WEB-INF/lib

@@ -18,10 +18,17 @@
         <br><br>
 
         Favorite Language:
-        Java <form:radiobutton path="favoriteLanguage" value="Java"/>
-        PHP <form:radiobutton path="favoriteLanguage" value="PHP"/>
-        C++ <form:radiobutton path="favoriteLanguage" value="C++"/>
-        Ruby <form:radiobutton path="favoriteLanguage" value="Ruby"/>
+        Java<form:radiobutton path="favoriteLanguage" value="Java"/>
+        PHP<form:radiobutton path="favoriteLanguage" value="PHP"/>
+        C++<form:radiobutton path="favoriteLanguage" value="C++"/>
+        Ruby<form:radiobutton path="favoriteLanguage" value="Ruby"/>
+
+        <br><br>
+
+        Operating System:
+        Linux<form:checkbox path="operatingSystem" value="Linux"/>
+        Mac<form:checkbox path="operatingSystem" value="Mac OS"/>
+        Win<form:checkbox path="operatingSystem" value="Win OS"/>
 
         <br><br>
 
