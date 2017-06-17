@@ -11,6 +11,10 @@
         <form:errors path="lastName" />
         <br/>
         <br/>
+        Free Passes: <form:input path="freePasses"/>
+        <form:errors path="freePasses" />
+        <br/>
+        <br/>
         <input type="submit" value="Submit" />
 
     </form:form>
