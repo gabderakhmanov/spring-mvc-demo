@@ -9,6 +9,9 @@
 <br>
 <br>
 <a href="/student/showForm">Go to Student Form</a>
+<br>
+<br>
+<a href="/customer/customerForm">Go to Customer Form</a>
 
 </body>
 
