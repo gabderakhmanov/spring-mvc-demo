@@ -1,8 +1,11 @@
 package com.abg.springdemo.customer;
 
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -15,6 +18,12 @@ import javax.validation.Valid;
 @RequestMapping("/customer")
 public class CustomerController {
 
+    @InitBinder
+    public void initBinder(WebDataBinder dataBinder){
+        StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+        dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+    }
+
     @RequestMapping("/customerForm")
     public String customerForm(Model theModel){
         theModel.addAttribute("customer", new Customer());
@@ -25,6 +34,8 @@ public class CustomerController {
     public String processForm(
             @Valid @ModelAttribute("customer") Customer theCustomer,
             BindingResult theBindingResult) {
+
+        System.out.println("|"+theCustomer.getLastName()+"|");
 
         if (theBindingResult.hasErrors()){
             return "customer-form";

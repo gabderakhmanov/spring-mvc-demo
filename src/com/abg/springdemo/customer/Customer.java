@@ -11,7 +11,7 @@ public class Customer {
     private String firstName;
 
     @NotNull(message = "is required")
-    @Size(min = 3, message = "must be more then 3 chars")
+    @Size(min = 3, message = "must be more or equal 3 chars")
     private String lastName;
 
     public String getFirstName() {
