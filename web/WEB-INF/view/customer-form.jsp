@@ -15,6 +15,10 @@
         <form:errors path="freePasses" />
         <br/>
         <br/>
+        Post Code: <form:input path="postCode"/>
+        <form:errors path="postCode" />
+        <br/>
+        <br/>
         <input type="submit" value="Submit" />
 
     </form:form>

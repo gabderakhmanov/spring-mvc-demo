@@ -35,7 +35,7 @@ public class CustomerController {
             @Valid @ModelAttribute("customer") Customer theCustomer,
             BindingResult theBindingResult) {
 
-        System.out.println("|"+theCustomer.getFreePasses()+"|");
+        System.out.println("|"+theCustomer.getPostCode()+"|");
 
         if (theBindingResult.hasErrors()){
             return "customer-form";

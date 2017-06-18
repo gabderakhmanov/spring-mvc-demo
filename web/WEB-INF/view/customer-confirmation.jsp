@@ -8,6 +8,7 @@
 
 Name of the customer is : ${customer.firstName} ${customer.lastName}
 Free passes of the customer are : ${customer.freePasses}
+Post Code: ${customer.postCode}
 
 
 </body>
